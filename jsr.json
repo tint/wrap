@@ -1,0 +1,14 @@
+{
+  "name": "@tint/wrap",
+  "version": "1.0.0",
+  "license": "MIT",
+  "exports": "./mod.ts",
+  "publish": {
+    "include": [
+      "mod.ts",
+      "LICENSE",
+      "README.md",
+      "README.zh.md"
+    ]
+  }
+}
