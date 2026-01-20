@@ -29,56 +29,7 @@ yarn add jsr:@tint/wrap
 vlt install jsr:@tint/wrap
 ```
 
-### Other package managers (npm, bun, older versions)
-
-For npm, bun, or older versions of pnpm/yarn, use the JSR CLI:
-
-```bash
-# Automatically detects your package manager
-npx jsr add @tint/wrap
-bunx jsr add @tint/wrap
-yarn dlx jsr add @tint/wrap
-pnpm dlx jsr add @tint/wrap
-
-# Or specify the package manager explicitly
-npx jsr add @tint/wrap --npm
-npx jsr add @tint/wrap --yarn
-npx jsr add @tint/wrap --pnpm
-```
-
-The JSR CLI will automatically configure your `.npmrc` file to use the JSR registry. You should commit this file to source control to ensure future installations work correctly.
-
-### Manual configuration
-
-Alternatively, you can manually configure your package manager by adding this to your `.npmrc`:
-
-```
-@jsr:registry=https://npm.jsr.io
-```
-
-Then install using the `@jsr` scope:
-
-```bash
-npm install @jsr/tint__wrap
-yarn add @jsr/tint__wrap
-pnpm add @jsr/tint__wrap
-```
-
-For a cleaner import experience, you can add an alias to your `package.json`:
-
-```json
-{
-  "dependencies": {
-    "@tint/wrap": "npm:@jsr/tint__wrap@latest"
-  }
-}
-```
-
-Then import as:
-
-```typescript
-import { wrap } from "@tint/wrap";
-```
+For other package managers (npm, older versions), see the [JSR documentation on using packages](https://jsr.io/docs/using-packages#native-jsr-imports) for setup instructions.
 
 ## Usage
 

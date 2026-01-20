@@ -4,7 +4,8 @@
  */
 export interface Wrapper<T> {
   /**
-   * Executes a function without modifying the wrapped value
+   * Executes a function with the wrapped value as 'this' context and returns the wrapper for chaining
+   *
    * @template F Function type constrained to functions that don't return a value
    * @param fn The function to execute, 'this' context will be bound to the wrapped value
    * @param args Arguments to pass to the function
