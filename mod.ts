@@ -7,6 +7,7 @@ export interface Wrapper<T> {
    * Executes a function with the wrapped value as 'this' context and returns the wrapper for chaining
    *
    * @template F Function type constrained to functions that don't return a value
+   *
    * @param fn The function to execute, 'this' context will be bound to the wrapped value
    * @param args Arguments to pass to the function
    * @returns The wrapper itself for method chaining
@@ -36,7 +37,9 @@ export interface Wrapper<T> {
 
 /**
  * Creates a wrapper instance
+ *
  * @template T The type of the value to wrap
+ *
  * @param value The value to wrap
  * @returns A wrapper instance
  */
